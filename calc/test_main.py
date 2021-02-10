@@ -1,3 +1,5 @@
+import pytest
+
 import calc
 
 
@@ -15,3 +17,15 @@ def test_mult():
 def test_subtraction():
     assert calc.subtract(3, 1) == 2
 
+
+@pytest.fixture
+def names_dict():
+    return {'Sander': 'Beekhuis'}
+
+
+def test_has_sander(names_dict):
+    assert 'Sandert' in names_dict
+
+
+def test_has_no_remy(names_dict):
+    assert 'Remy' not in names_dict

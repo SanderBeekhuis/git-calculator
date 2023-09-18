@@ -1,4 +1,5 @@
 import calc
+import pytest
 
 
 def test_add():
@@ -17,3 +18,10 @@ def test_mult():
 
 def test_subtraction():
     assert calc.subtract(3, 1) == 2
+
+
+def test_division():
+    assert calc.division(4, 2) == 2.0
+    assert calc.division(5, 3) == 5/3
+    with pytest.raises(ZeroDivisionError):
+        calc.division(1, 0)

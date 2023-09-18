@@ -12,6 +12,7 @@ def test_mult():
     assert calc.mult(2, 0) == 0
     assert calc.mult(2, 3, 4) == 24
     assert calc.mult(2) == 2
+    assert calc.mult(3, .5) == 1.5
 
 
 def test_subtraction():

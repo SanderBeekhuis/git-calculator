@@ -10,7 +10,9 @@ def mult(a, b):
     return a * b
 
 
-def division(a: int, b: int):
+def division(a: int, b: int) -> float:
+    """Divides a by b and returns the result.
+    """
     if b == 0:
         raise ZeroDivisionError
     return a / b

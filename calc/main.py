@@ -9,11 +9,14 @@ def subtract(a, b):
     return a - b
 
 
-def mult(*args: float) -> float:
+def mult(*args: float | int) -> float | int:
     """Multiply a list of numbers together
 
+    Args:
+        *args (float | int): A list of numbers to multiply
+
     Returns:
-        float: The product of the numbers
+        float | int: The product of the numbers
     """
     return prod(args)
 

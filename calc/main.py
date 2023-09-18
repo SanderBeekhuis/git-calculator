@@ -1,5 +1,6 @@
 from math import prod
 
+
 def add(*args):
     return sum(args)
 
@@ -8,7 +9,7 @@ def subtract(a, b):
     return a - b
 
 
-def mult(*args:float) -> float:
+def mult(*args: float) -> float:
     """Multiply a list of numbers together
 
     Returns:

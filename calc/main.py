@@ -1,3 +1,6 @@
+from math import prod
+
+
 def add(*args):
     return sum(args)
 
@@ -6,8 +9,16 @@ def subtract(a, b):
     return a - b
 
 
-def mult(a, b):
-    return a * b
+def mult(*args: float | int) -> float | int:
+    """Multiply a list of numbers together
+
+    Args:
+        *args (float | int): A list of numbers to multiply
+
+    Returns:
+        float | int: The product of the numbers
+    """
+    return prod(args)
 
 
 if __name__ == '__main__':

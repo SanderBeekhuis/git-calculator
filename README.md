@@ -1,5 +1,5 @@
-# calculator
-Small repo used for demo-ing branches
+# Calculator
+Small repo used for demo-ing how branches work with git. 
 
 ## Getting Started
 1. Install poetry
